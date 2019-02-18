@@ -1,5 +1,22 @@
+[ABSTRACT]
+[Categories and Subject Descriptors]
+[General Terms]
+[Keywords]
+[INTRODUCTION AND MOTIVATION]
+[RELATED WORK]
+
+================================================================================
+================================================================================
+
 【SIGIR (ACM SIGIR Conference on Research and Development in Information Retrieval)】
 (11)	SIGIR2013 - SESSION Recommender systems - Improve collaborative filtering through bordered block diagonal form matrices
+[ABSTRACT]
+[Categories and Subject Descriptors]
+[General Terms]
+[Keywords]
+[INTRODUCTION AND MOTIVATION]
+[RELATED WORK]
+
 The CF framework based on (A)BBDF structures of rating matrices proposed in this paper is capable of combining the advantages of community detection and matrix clustering techniques as well as making use of various CF algorithms. An important advantage of this framework is that it does not rely on a specific CF algorithm. Any CF algorithm that is based on rating matrices can be integrated into this framework, such as User-based, Item-based, SVD and NMF. Experimental results show that this framework helps these CF algorithms to improve the prediction accuracy and, at the same time, benefits system scalability.
 (12)	SIGIR2013 - SESSION Recommender systems - Opportunity model for e-commerce recommendation - right product; right time
 Illustration of the relationship of variables. The user first makes a series of product purchases before timestamp tm. Then the user makes a purchase of item jm in category m at timestamp tm. This follow-up purchase in category m is the ith observation in category m. Suppose that the purchase of jm is triggered by item js at timestamp ts. Purchase time ym,i = tm − ts is the time gap between tm and ts. An observation i is associated with two major variables: 1) purchase time ym,i and 2) covariates xm,i (which is not shown in the figure).
