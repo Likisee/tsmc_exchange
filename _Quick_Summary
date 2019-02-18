@@ -4,6 +4,7 @@
 [Keywords]
 [INTRODUCTION AND MOTIVATION]
 [RELATED WORK]
+[DataSet]
 
 ================================================================================
 ================================================================================
@@ -16,9 +17,10 @@
 [Keywords]
 [INTRODUCTION AND MOTIVATION]
 [RELATED WORK]
+[DataSet]
 
 The CF framework based on (A)BBDF structures of rating matrices proposed in this paper is capable of combining the advantages of community detection and matrix clustering techniques as well as making use of various CF algorithms. An important advantage of this framework is that it does not rely on a specific CF algorithm. Any CF algorithm that is based on rating matrices can be integrated into this framework, such as User-based, Item-based, SVD and NMF. Experimental results show that this framework helps these CF algorithms to improve the prediction accuracy and, at the same time, benefits system scalability.
-(12)	SIGIR2013 - SESSION Recommender systems - Opportunity model for e-commerce recommendation - right product; right time
+*(12)	SIGIR2013 - SESSION Recommender systems - Opportunity model for e-commerce recommendation - right product; right time
 Illustration of the relationship of variables. The user first makes a series of product purchases before timestamp tm. Then the user makes a purchase of item jm in category m at timestamp tm. This follow-up purchase in category m is the ith observation in category m. Suppose that the purchase of jm is triggered by item js at timestamp ts. Purchase time ym,i = tm − ts is the time gap between tm and ts. An observation i is associated with two major variables: 1) purchase time ym,i and 2) covariates xm,i (which is not shown in the figure).
 (13)	“Information Filtering”
 (14)	SIGIR2013 - SESSION Short papers 2 - filtering and recommending - Tagcloud-based explanation with feedback for recommender systems
@@ -56,7 +58,7 @@ The purpose of this tutorial is to survey those roots, and their relation to the
 (28)	SIGIR2015 - SESSION Session 4C Classifying & Ranking - Listwise Collaborative Filtering
 Recently, ranking-oriented collaborative filtering (CF) algorithms have achieved great success in recommender systems. They obtained state-of-the-art performances by estimating a preference ranking of items for each user rather than estimating the absolute ratings on unrated items (as conventional rating-oriented CF algorithms do). In this paper, we propose a new ranking-oriented CF algorithm, called ListCF.
 Different from rating-oriented CF, ranking-oriented CF [18] directly predicts a preference ranking of items for each user. Similarly, ranking-oriented CF algorithms can be also categorized into memory-based ranking-oriented CF [15, 27] and model-based ranking-oriented CF [10, 20, 25].
-(29)	SIGIR2015 - SESSION Session 5B Products - Learning Hierarchical Representation Model for NextBasket Recommendation
+*(29)	SIGIR2015 - SESSION Session 5B Products - Learning Hierarchical Representation Model for NextBasket Recommendation
 To solve the above recommendation problem, here we present the proposed HRM in detail. The basic idea of our work is to learn a recommendation model that can involve both sequential behavior and users’ general taste, and meanwhile modeling complicated interactions among these factors in prediction.
 (30)	SIGIR2015 - SESSION Session 9A Streams - Islands in the Stream - A Study of Item Recommendation within an Enterprise Social Stream
 Surprise Ratings
@@ -73,29 +75,29 @@ In fact, if a user has significant similar behaviors to a large number of other 
 關於UxI矩陣,有空可以看一下.
 (36)	SIGIR2016 - SESSION Recommendation Systems I - Discrete Collaborative Filtering
 We argue that such a scheme will result in a large quantization loss, which especially compromises the performance of large-scale CF that resorts to longer binary codes. In this paper, we propose a principled CF hashing framework called Discrete Collaborative Filtering (DCF), which directly tackles the challenging discrete optimization that should have been treated adequately in hashing. The formulation of DCF has two advantages: 1) the Hamming similarity induced loss that preserves the intrinsic user-item similarity, and 2) the balanced and uncorrelated code constraints that yield compact yet informative binary codes.
-(37)	SIGIR2016 - SESSION Recommendation Systems I - How Much Novelty is Relevant. It Depends on Your Curiosity
+*(37)	SIGIR2016 - SESSION Recommendation Systems I - How Much Novelty is Relevant. It Depends on Your Curiosity
 Traditional recommendation systems (RSs) aim to recommend items that are relevant to the user’s interest. Unfortunately, the recommended items will soon become too familiar to the user and hence fail to arouse her interest. Discovery-oriented recommendation systems (DORSs) complement accuracy with discover utilities (DUs) such as novelty and diversity and optimize the tradeoff between the DUs and accuracy of the recommendations. Unfortunately, DORSs ignore an important fact that different users have different appetites for DUs. That is, highly curious users can accept highly novel and diversified recommendations whereas conservative users would behave in the opposite manner.
-(38)	SIGIR2016 - SESSION Recommendation Systems II - Collaborative Filtering Bandits
+*(38)	SIGIR2016 - SESSION Recommendation Systems II - Collaborative Filtering Bandits
 In this work, we investigate an adaptive clustering technique for content recommendation based on exploration-exploitation strategies in contextual multi-armed bandit settings. Our algorithm takes into account the collaborative effects that arise due to the interaction of the users with the items, by dynamically grouping users based on the items under consideration and, at the same time, grouping items based on the similarity of the clusterings induced over the users. The resulting algorithm thus takes advantage of preference patterns in the data in a way akin to collaborative filtering methods.
-(39)	SIGIR2016 - SESSION Short Research Papers - A Dynamic Recurrent Model for Next Basket Recommendation
+*(39)	SIGIR2016 - SESSION Short Research Papers - A Dynamic Recurrent Model for Next Basket Recommendation
 Next basket recommendation becomes an increasing concern. Most conventional models explore either sequential transaction features or general interests of users. Further, some works treat users’ general interests and sequential behaviors as two totally divided matters, and then combine them in some way for next basket recommendation. Moreover, the state-of-the-art models are based on the assumption of Markov Chains (MC), which only capture local sequential features between two adjacent baskets.
-(40)	SIGIR2016 - SESSION Short Research Papers - Collaborative Ranking with Social Relationships for Top-N Recommendations
+*(40)	SIGIR2016 - SESSION Short Research Papers - Collaborative Ranking with Social Relationships for Top-N Recommendations
 Although Collaborative Ranking (CR) models can produce accurate recommendation lists, in practice several real-world problems decrease their ranking performance, such as the sparsity and cold start problems. Here, to account for the fact that the selections of social friends can leverage the recommendation accuracy, we propose SCR, a Social CR model. Our model learns personalized ranking functions collaboratively, using the notion of Social Reverse Height, that is, considering how well the relevant items of users and their social friends have been ranked at the top of the list.
 (41)	SIGIR2016 - SESSION Short Research Papers - Investment Recommendation using Investor Opinions in Social Media
-(42)	SIGIR2016 - SESSION Short Research Papers - Multi-Rate Deep Learning for Temporal Recommendation
+*(42)	SIGIR2016 - SESSION Short Research Papers - Multi-Rate Deep Learning for Temporal Recommendation
 In this work, we propose a novel deep neural network based architecture that models the combination of long-term static and short-term temporal user preferences to improve the recommendation performance.
-(43)	SIGIR2016 - SESSION Short Research Papers - Network-Aware Recommendations of Novel Tweets
+*(43)	SIGIR2016 - SESSION Short Research Papers - Network-Aware Recommendations of Novel Tweets
 In this paper, we present a novel tweet-recommendation approach, which exploits network, content, and retweet analyses for making recommendations of tweets. The idea is to recommend tweets that are not visible to the user (i.e., they do not appear in the user timeline) because nobody in her social circles published or retweeted them.
-(44)	SIGIR2016 - SESSION User Needs - Going back in Time - An Investigation of Social Media Re-finding
+*(44)	SIGIR2016 - SESSION User Needs - Going back in Time - An Investigation of Social Media Re-finding
 We present results from a 5 month-long naturalistic, log-based study of user interaction with Twitter, which suggest re-finding to be a regular activity and that Tweets can offer utility for longer than one might think.
-(45)	SIGIR2017 - SESSION Session 2B Filtering and Recommending 1 - Cross-Domain Recommendation via Clustering on Multi-Layer Graphs
+*(45)	SIGIR2017 - SESSION Session 2B Filtering and Recommending 1 - Cross-Domain Recommendation via Clustering on Multi-Layer Graphs
 4.3 Spectral clustering on multi-layer graph
-(46)	SIGIR2017 - SESSION Session 2B Filtering and Recommending 1 - Item Silk Road - Recommending Items from Information
+*(46)	SIGIR2017 - SESSION Session 2B Filtering and Recommending 1 - Item Silk Road - Recommending Items from Information
 Online platforms can be divided into information-oriented and social-oriented domains. e former refers to forums or Ecommerce sites that emphasize user-item interactions, like Trip.com and Amazon; whereas the later refers to social networking services (SNSs) that have rich user-user connections, such as Facebook and Twitter. Despite their heterogeneity, these two domains can be bridged by a few overlapping users, dubbed as bridge users. In this work, we address the problem of cross-domain social recommendation, i.e., recommending relevant items of information domains to potential users of social networks. To our knowledge, this is a new problem that has rarely been studied before.
 可抄abstract
 (47)	SIGIR2017 - SESSION Session 3B Filtering and Recommending 2 - Personalized Key Frame Recommendation
 2.3 Time-synchronized Comments
-(48)	SIGIR2017 - SESSION Session 5B Filtering and Recommending 3 - Content Recommendation for Viral Social Influence
+*(48)	SIGIR2017 - SESSION Session 5B Filtering and Recommending 3 - Content Recommendation for Viral Social Influence
 In this paper, we address the natural problem that arises in such circumstances: Suggest content, expressed as a limited set of attributes, for a creative promotion campaign that starts out from a given seed set of initiators, so as to maximize its expected spread over a social network. To our knowledge, no previous work addresses this problem. Wef nd that the problem is NP-hard and inapproximable. As a tight approximation guarantee is not admissible, we design an efficient heuristic, Explore-Update, as well as a conventional Greedy solution. Our experimental evaluation demonstrates that Explore-Update selects near-optimal attribute sets with real data, achieves 30% higher spread than baselines, and runs an order of magnitude faster than the Greedy solution.
 (49)	SIGIR2017 - SESSION Session 5B Filtering and Recommending 3 - Embedding Factorization Models for Jointly Recommending Items and User Generated Lists
 似乎很屌,但是公式也是很複雜,話說不要陷入recommending list/rank
@@ -104,33 +106,33 @@ In this paper, we address the natural problem that arises in such circumstances:
 (51)	SIGIR2017 - SESSION Short Research Papers - A Stream-based Resource for Multi-Dimensional Evaluation of Recommender Algorithms
 (52)	SIGIR2017 - SESSION Short Research Papers - Building Your Own Reading List Anytime via Embedding Relevance, Quality, Timeliness and Diversity
 The reading interests changes from time to time, thus Timeliness is another factor to represent the diﬀerences among popularity of books. Compared to Quality, this factor concerns more about the popularity trends, like what genres of books are more popular at that time. Therefore, the simplest way to embed the timeliness is to compare with the most popular books.
-(53)	SIGIR2017 - SESSION Short Research Papers - Generating and Personalizing Bundle Recommendations on Steam
+*(53)	SIGIR2017 - SESSION Short Research Papers - Generating and Personalizing Bundle Recommendations on Steam
 In this paper, we seek to understand the semantics of what constitutes a ‘good’ bundle, in order to recommend existing bundles to users on the basis of their constituent products, as well the more difficult task of generating new bundles that are personalized to a user.
 (54)	SIGIR2017 - SESSION Short Research Papers - The Impact of Linkage Methods in Hierarchical Clustering for Active Learning to Rank
 Our method is based on hierarchical agglomerative clustering (average linkage) and we also report the performance of other linkage criteria that measure the distance between two clusters of query-document pairs. Another difference from previous hierarchical clustering is that we cluster the instances belonging to the same query, which usually outperforms the baselines.
 【WWW (ACM International World Wide Web Conference)】
 (55)	WWW2013 - SESSION Research papers - DIGTOBI - a recommendation system for Digg articles using probabilistic modeling
 想法好,但公式太長!!
-(56)	WWW2013 - SESSION Research papers - Diversified recommendation on graphs - pitfalls, measures, and algorithms
+*(56)	WWW2013 - SESSION Research papers - Diversified recommendation on graphs - pitfalls, measures, and algorithms
 雖然研究方向不同,但必看! GRAPH相關且非常完整!
 (57)	WWW2013 - SESSION Research papers - Do social explanations work - studying and modeling the effects of social explanations in recommender systems
 experiment design
-(58)	WWW2013 - SESSION Research papers - SoCo - a social network aided context-aware recommender system
+*(58)	WWW2013 - SESSION Research papers - SoCo - a social network aided context-aware recommender system
 必看,用context變成第三個axis!!
 (59)	WWW2013 - SESSION Research papers - TopRec - domain-specific recommendation through community topic mining in social networkWWW2013 - SESSION Research papers - TopRec - domain-specific recommendation through community topic mining in social networkop
 topic model
 (60)	WWW2013 - SESSION Research papers - Whom to mention - expand the diffusion of tweets by @ recommendation on micro-blogging systems
 Statistical Indicators on Modeling User Influence, Evaluation Metrics
 We evaluate the results using both standard information retrieval metrics[14][9] and metrics featuring on measuring information propogation[35]. In particular, we use the following metrics: precision (P ), average precision at K (AP @K), retweet times (RT ), user coverage (Cov) and normalized user coverage (Cov N)
-(61)	WWW2014 - SESSION The future - Exploring the filter bubble - the effect of using recommender systems on content diversity
+*(61)	WWW2014 - SESSION The future - Exploring the filter bubble - the effect of using recommender systems on content diversity
 (62)	WWW2015 - SESSION Technical Papers 1 - ACCAMS - Additive Co-Clustering to Approximate Matrices Succinctly
 Co-Clustering 好多實驗, 好多數學!!
-(63)	WWW2015 - SESSION Technical Papers 1 - Daily-Aware Personalized Recommendation based on Feature-Level Time Series Analysis
+*(63)	WWW2015 - SESSION Technical Papers 1 - Daily-Aware Personalized Recommendation based on Feature-Level Time Series Analysis
 (64)	WWW2015 - SESSION Technical Papers 1 - Recommendation Subgraphs for Web Discovery
 (65)	WWW2015 - SESSION Technical Papers 1 - Who, What, When, and Where - Multi-Dimensional Collaborative Recommendations Using Tensor Factorization on Sparse User-Generated Data
 (66)	WWW2016 - SESSION Session 2 - Economic Recommendation with Surplus Maximization
 (67)	WWW2016 - SESSION Session 2 - When do Recommender Systems Work the Best - The Moderating Effects of Product Attributes and Consumer Reviews on Recommender Performance
-(68)	WWW2016 - SESSION Session 12 - Modeling User Consumption Sequences
+*(68)	WWW2016 - SESSION Session 12 - Modeling User Consumption Sequences
 repeat consumption, Boredom in consumption sequences
 (69)	WWW2016 - SESSION Session 26B - The Effect of Recommendations on Network Structure
 又是WTF, 好多數學
@@ -138,24 +140,24 @@ repeat consumption, Boredom in consumption sequences
 (71)	WWW2016 - SESSION Session 31 - User Fatigue in Online News Recommendation
 (72)	WWW2017 - SESSION 1H Recommeder Systems 1 - Beyond Globally Optimal - Focused Learning for Improved Recommendations
 (73)	WWW2017 - SESSION 1H Recommeder Systems 1 - Neural Collaborative Filtering
-(74)	WWW2017 - SESSION 2H Recommeder Systems 2 - Streaming Recommender Systems
-(75)	WWW2017 - SESSION 5B Crowdsourcing 2 - Optimizing the Recency-Relevancy Trade-off in Online News Recommendations
+*(74)	WWW2017 - SESSION 2H Recommeder Systems 2 - Streaming Recommender Systems
+*(75)	WWW2017 - SESSION 5B Crowdsourcing 2 - Optimizing the Recency-Relevancy Trade-off in Online News Recommendations
 Yahoo! news, CLEF NewsREEL, and NYTimes datasets
 WSDM (ACM International Conference on Web Search and Data Mining)
-(76)	WSDM2013 - SESSION Web mining, prediction, and recommendation - Using early view patterns to predict the popularity of youtube videos
+*(76)	WSDM2013 - SESSION Web mining, prediction, and recommendation - Using early view patterns to predict the popularity of youtube videos
 (77)	WSDM2014 - SESSION Recommender systems - Who likes it more - mining worth-recommending items from long tails by modeling relative preference
 (78)	WSDM2014 - SESSION Recommender systems and networks - Personalized entity recommendation - a heterogeneous information network approach
-(79)	WSDM2015 - SESSION Session 6 Crowdsourcing, Temporal and Location-based mining - Just in Time Recommendations - Modeling the Dynamics of Boredom in Activity Streams
-(80)	WSDM2016 - SESSION Communities and Social Interaction - CCCF - Improving Collaborative Filtering via Scalable User-Item Co-Clustering
+*(79)	WSDM2015 - SESSION Session 6 Crowdsourcing, Temporal and Location-based mining - Just in Time Recommendations - Modeling the Dynamics of Boredom in Activity Streams
+*(80)	WSDM2016 - SESSION Communities and Social Interaction - CCCF - Improving Collaborative Filtering via Scalable User-Item Co-Clustering
 可以抄abstract
 (81)	WSDM2017 - SESSION Paper Session 1 Social and Information Networks - Evolution of Ego-networks in Social Media with Link Recommendations
 (82)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Directed Edge Recommender System
-(83)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Multi-Product Utility Maximization for Economic Recommendation
+*(83)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Multi-Product Utility Maximization for Economic Recommendation
 MPUM integrates the economic theory of consumer choice with personalized recommendation, and focuses on the utility of sets of product sets for individual users. MPUM considers what the users already have when recommending additional products. We evaluate MPUM against several popular recommendation algorithms on two real-world E-commerce datasets. Results confirm the underlying economic intuition, and show that MPUM significantly outperforms the comparison algorithms under top-K evaluation metrics.
 Shop.com Data. Amazon Baby Registry Data.
 (84)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Neural Survival Recommender
-(85)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Not Enough Data - Joint Inferring Multiple Diffusion Networks via Network Generation Priors
-(86)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Recurrent Recommender Networks
+*(85)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Not Enough Data - Joint Inferring Multiple Diffusion Networks via Network Generation Priors
+*(86)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Recurrent Recommender Networks
 (87)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Temporally Factorized Network Modeling for Evolutionary Network Analysis
 evolutionary network analysis
 (88)	WSDM2017 - SESSION Paper Session 8 ML, Embeddings and Tensors - Random Semantic Tensor Ensemble for Scalable Knowledge Graph Link Prediction
@@ -175,42 +177,42 @@ The proposed personalized recommendation approach fuses three social factors: us
 Learning users’ preferences is critical to enable personalized recommendation services. In this paper, we study on how to learn users’ preferences from abundant online activities, e.g., browsing and examination, which are usually called implicit feedbacks since they cannot be interpreted as users’ likes or dislikes on the corresponding products directly. Pairwise preference learning algorithms are the state-of-the-art methods for this important problem, but they have two major limitations of low accuracy and low efficiency caused by noise in observed feedbacks and non-optimal learning steps in update rules.
 (99)	CIKM2014 - POSTER SESSION KM Track Posters - Dynamic Clustering of Contextual Multi-Armed Bandits
 Contextual Bandit. A contextual bandit algorithm proceeds in discrete iterations. At any iteration t, the bandit observes a particular user ut. There are also a set of available arms At that the bandit may choose to pull for this user.
-(100)	CIKM2014 - POSTER SESSION KM Track Posters - Improving Recommendation Accuracy by Combining Trust Communities and Collaborative Filtering
+*(100)	CIKM2014 - POSTER SESSION KM Track Posters - Improving Recommendation Accuracy by Combining Trust Communities and Collaborative Filtering
 (101)	CIKM2014 - POSTER SESSION KM Track Posters - Modeling Retail Transaction Data for Personalized Shopping Recommendation
 To demonstrate the effectiveness of our model, we choose two real retail data sets: BeiRen dateset and Tafeng dataset.
-(102)	CIKM2014 - SESSION IR Session 6 - Query Intent - Search Result Diversification via Filling Up Multiple Knapsacks
-(103)	CIKM2014 - SESSION KM Session 1 Social Networks & Social Media I - Optimizing Multi-Relational Factorization Models for Multiple Target Relations
-(104)	CIKM2014 - SESSION KM Session 3 - Recommenders & Collaborative Filtering I - Collaborative Filtering Incorporating Review Text and Co-clusters of Hidden User Communities and Item Groups
-(105)	CIKM2014 - SESSION KM Session 3 - Recommenders & Collaborative Filtering I - Deviation-Based Contextual SLIM Recommenders
+*(102)	CIKM2014 - SESSION IR Session 6 - Query Intent - Search Result Diversification via Filling Up Multiple Knapsacks
+*(103)	CIKM2014 - SESSION KM Session 1 Social Networks & Social Media I - Optimizing Multi-Relational Factorization Models for Multiple Target Relations
+*(104)	CIKM2014 - SESSION KM Session 3 - Recommenders & Collaborative Filtering I - Collaborative Filtering Incorporating Review Text and Co-clusters of Hidden User Communities and Item Groups
+*(105)	CIKM2014 - SESSION KM Session 3 - Recommenders & Collaborative Filtering I - Deviation-Based Contextual SLIM Recommenders
 Context-aware recommender systems (CARS) help improve the effectiveness of recommendations by adapting to users’ preferences in different contextual situations.
 The fundamental assumption of CARS is that a rating for an item is a function not just of the user and the item, but also of the context in which the item is evaluated or used. User’s preferences on a given item may vary from context to context. For example, companion is an influential context in the movie domain; you may make a different decision in selecting movies if you intend to watch the movie on a date, than if you plan on seeing a movie with children.
 (106)	CIKM2014 - SESSION KM Session 6 - Recommenders & Collaborative Filtering I - Maximizing Multi-scale Spatial Statistical Discrepancy
-(107)	CIKM2014 - SESSION KM Session 8 - Clustering and Ranking - Improving Co-Cluster Quality with Application to Product Recommendations
-(108)	CIKM2014 - SESSION KM Session 9 - Recommenders & Collaborative Filtering II - Dual-Regularized One-Class Collaborative Filtering
+*(107)	CIKM2014 - SESSION KM Session 8 - Clustering and Ranking - Improving Co-Cluster Quality with Application to Product Recommendations
+*(108)	CIKM2014 - SESSION KM Session 9 - Recommenders & Collaborative Filtering II - Dual-Regularized One-Class Collaborative Filtering
 (109)	CIKM2014 - SESSION KM Session 9 - Recommenders & Collaborative Filtering II - HGMF - Hierarchical Group Matrix Factorization for Collaborative Recommendation
 一堆數學
-(110)	CIKM2014 - SESSION KM Session 9 - Recommenders & Collaborative Filtering II - -Strength Lies in Differences- Diversifying Friends for Recommendations through Subspace Clustering
+*(110)	CIKM2014 - SESSION KM Session 9 - Recommenders & Collaborative Filtering II - -Strength Lies in Differences- Diversifying Friends for Recommendations through Subspace Clustering
 可抄
 (111)	CIKM2015 - SESSION Session 1B Personal Search - Experiments with a Venue-Centric Model for Personalisedand Time-Aware Venue Suggestion
 題目差很多,淡可以參考dataset分析
-(112)	CIKM2015 - SESSION Session 2F Heterogeneous Networks - A Graph-based Recommendation across Heterogeneous Domains
-(113)	CIKM2015 - SESSION Session 4D Optimization - L2Knng - Fast Exact K-Nearest Neighbor Graph Construction with L2-Norm Pruning
+*(112)	CIKM2015 - SESSION Session 2F Heterogeneous Networks - A Graph-based Recommendation across Heterogeneous Domains
+*(113)	CIKM2015 - SESSION Session 4D Optimization - L2Knng - Fast Exact K-Nearest Neighbor Graph Construction with L2-Norm Pruning
 (114)	CIKM2015 - SESSION Session 4E Social Networks 2 - Extracting Interest Tags for Non-famous Users in Social Network
-(115)	CIKM2015 - SESSION Session 5D Data Streams - Weighted Similarity Estimation in Data Streams
-(116)	CIKM2015 - SESSION Session 6C Points-of-Interest - Location and Time Aware Social Collaborative Retrieval for New Successive Point-of-Interest Recommendation
-(117)	CIKM2015 - SESSION Session 7D Social Networks 3 - DifRec - A Social-Diffusion-Aware Recommender System
+*(115)	CIKM2015 - SESSION Session 5D Data Streams - Weighted Similarity Estimation in Data Streams
+*(116)	CIKM2015 - SESSION Session 6C Points-of-Interest - Location and Time Aware Social Collaborative Retrieval for New Successive Point-of-Interest Recommendation
+*(117)	CIKM2015 - SESSION Session 7D Social Networks 3 - DifRec - A Social-Diffusion-Aware Recommender System
 (118)	CIKM2015 - SESSION Session 8D Recommendation - Toward Dual Roles of Users in Recommender Systems
 (119)	CIKM2015 - SESSION Short Papers Knowledge Management - A Probabilistic Rating Auto-encoder for Personalized Recommender Systems
 (120)	CIKM2015 - SESSION Short Papers Knowledge Management - Improving Collaborative Filtering via Hidden Structured Constraint
-(121)	CIKM2015 - SESSION Short Papers Knowledge Management - Structured Sparse Regression for Recommender Systems
+*(121)	CIKM2015 - SESSION Short Papers Knowledge Management - Structured Sparse Regression for Recommender Systems
 (122)	CIKM2016 - SESSION Poster Session II Extended Short Papers - Top-N Recommendation on Graphs
 (123)	CIKM2016 - SESSION Session 1a Recommendation - Social Recommendation with Strong and Weak Ties
 (124)	CIKM2016 - SESSION Session 3a Graph Analytics - Group-Aware Weighted Bipartite B-Matching
-(125)	CIKM2016 - SESSION Session 3e Social Networks - Links and Trust - Predicting Popularity of Twitter Accounts through the Discovery of Link-Propagating Early Adopters
-(126)	CIKM2016 - SESSION Session 7a Advertising and Ranking - Joint Collaborative Ranking with Social Relationships in Top-N Recommendation
+*(125)	CIKM2016 - SESSION Session 3e Social Networks - Links and Trust - Predicting Popularity of Twitter Accounts through the Discovery of Link-Propagating Early Adopters
+*(126)	CIKM2016 - SESSION Session 7a Advertising and Ranking - Joint Collaborative Ranking with Social Relationships in Top-N Recommendation
 【SIGKDD (ACM SIGKDD international conference on Knowledge discovery and data mining)】
 (127)	SIGKDD2013 - A new collaborative filtering approach for increasing the aggregate diversity of recommender systems
-(128)	SIGKDD2013 - Combining latent factor model with location features for event-based group recommendation
+*(128)	SIGKDD2013 - Combining latent factor model with location features for event-based group recommendation
 (129)	SIGKDD2013 - Learning geographical preferences for point-of-interest recommendation
 The problem of point of interest (POI) recommendation is to provide personalized recommendations of places of interests, such as restaurants, for mobile users. Due to its complexity and its connection to location based social networks (LBSNs)
 (130)	SIGKDD2013 - SESSION Recommender systems - Learning to question - leveraging user preferences for shopping advice
@@ -221,28 +223,28 @@ The problem of point of interest (POI) recommendation is to provide personalized
 (135)	SIGKDD2014 - SESSION Research session 17 recommendations and ratings - Product selection problem - improve market share by learning consumer behavior
 (136)	SIGKDD2014 - SESSION Research session 26 social and information networks - Who to follow and why - link prediction with explanations
 (137)	SIGKDD2015 - SESSION Industry & Government Track Papers - Building Discriminative User Profiles for Large-scale Content Recommendation
-(138)	SIGKDD2015 - SESSION Industry & Government Track Papers - Life-stage Prediction for Product Recommendation in E-commerce
+*(138)	SIGKDD2015 - SESSION Industry & Government Track Papers - Life-stage Prediction for Product Recommendation in E-commerce
 (139)	SIGKDD2015 - SESSION Industry & Government Track Papers - One-Pass Ranking Models for Low-Latency Product Recommendations
-(140)	SIGKDD2015 - SESSION Research Paper Presentations (Part 1) - Inferring Air Quality for Station Location Recommendation Based on Urban Big Data
-(141)	SIGKDD2015 - SESSION Research Paper Presentations (Part 1) - Real Time Recommendations from Connoisseurs
+*(140)	SIGKDD2015 - SESSION Research Paper Presentations (Part 1) - Inferring Air Quality for Station Location Recommendation Based on Urban Big Data
+*(141)	SIGKDD2015 - SESSION Research Paper Presentations (Part 1) - Real Time Recommendations from Connoisseurs
 (142)	SIGKDD2015 - SESSION Research Paper Presentations (Part 2) - Collaborative Deep Learning for Recommender Systems
 (143)	SIGKDD2015 - SESSION Research Paper Presentations (Part 2) - Efficient Latent Link Recommendation in Signed Networks
 (144)	SIGKDD2016 - POSTER SESSION Applied Data Science Track Posters - Scalable Time-Decaying Adaptive Prediction Algorithm
 (145)	SIGKDD2016 - POSTER SESSION Research Track Posters - Online Context-Aware Recommendation with Time Varying Multi-Armed Bandit
 (146)	SIGKDD2016 - POSTER SESSION Research Track Posters - The Million Domain Challenge - Broadcast Email Prioritization by Cross-domain Recommendation
 (147)	SIGKDD2016 - SESSION Research Track Full Papers - Point-of-Interest Recommendations - Learning Potential Check-ins from Friends
-(148)	SIGKDD2016 - SESSION Research Track Full Papers - The Limits of Popularity-Based Recommendations, and the Role of Social Ties
-(149)	SIGKDD2016 - SESSION Research Track Full Papers - Towards Conversational Recommender Systems
-(150)	SIGKDD2016 - SESSION Research Track Full Papers - Unified Point-of-Interest Recommendation with Temporal Interval Assessment
-(151)	SIGKDD2016 - SESSION Research Track Full Papers - When Social Influence Meets Item Inference
+*(148)	SIGKDD2016 - SESSION Research Track Full Papers - The Limits of Popularity-Based Recommendations, and the Role of Social Ties
+*(149)	SIGKDD2016 - SESSION Research Track Full Papers - Towards Conversational Recommender Systems
+*(150)	SIGKDD2016 - SESSION Research Track Full Papers - Unified Point-of-Interest Recommendation with Temporal Interval Assessment
+*(151)	SIGKDD2016 - SESSION Research Track Full Papers - When Social Influence Meets Item Inference
 (152)	SIGKDD2017 - POSTER SESSION KDD 2017 Applied Data Science Papers (Poster Papers) - A Data-driven Process Recommender Framework
 (153)	SIGKDD2017 - POSTER SESSION KDD 2017 Applied Data Science Papers (Poster Papers) - DeepProbe - Information Directed Sequence Understanding and Chatbot Design via Recurrent Neural Networks
 (154)	SIGKDD2017 - POSTER SESSION KDD 2017 Applied Data Science Papers (Poster Papers) - Dynamic Attention Deep Model for Article Recommendation by Learning Human Editors' Demonstration
 (155)	SIGKDD2017 - POSTER SESSION KDD 2017 Applied Data Science Papers (Poster Papers) - Embedding-based News Recommendation for Millions of Users
 (156)	SIGKDD2017 - POSTER SESSION KDD 2017 Research Papers (Poster Papers) - Bridging Collaborative Filtering and Semi-Supervised Learning - A Neural Approach for POI Recommendation
-(157)	SIGKDD2017 - POSTER SESSION KDD 2017 Research Papers (Poster Papers) - Effective Evaluation Using Logged Bandit Feedback from Multiple Loggers
+*(157)	SIGKDD2017 - POSTER SESSION KDD 2017 Research Papers (Poster Papers) - Effective Evaluation Using Logged Bandit Feedback from Multiple Loggers
 (158)	SIGKDD2017 - POSTER SESSION KDD 2017 Research Papers (Poster Papers) - Post Processing Recommender Systems for Diversity
-(159)	SIGKDD2017 - POSTER SESSION KDD 2017 Research Papers (Poster Papers) - Recurrent Poisson Factorization for Temporal Recommendation
+*(159)	SIGKDD2017 - POSTER SESSION KDD 2017 Research Papers (Poster Papers) - Recurrent Poisson Factorization for Temporal Recommendation
 (160)	SIGKDD2017 - SESSION KDD 2017 Research Papers (Oral Papers) - Collaborative Variational Autoencoder for Recommender Systems
-(161)	SIGKDD2017 - SESSION KDD 2017 Research Papers (Oral Papers) - Large-scale Collaborative Ranking in Near-Linear Time
+*(161)	SIGKDD2017 - SESSION KDD 2017 Research Papers (Oral Papers) - Large-scale Collaborative Ranking in Near-Linear Time
 (162)	SIGKDD2017 - SESSION KDD 2017 Research Papers (Oral Papers) - Meta-Graph Based Recommendation Fusion over Heterogeneous Information Networks
