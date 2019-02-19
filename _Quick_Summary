@@ -5,23 +5,28 @@
 [INTRODUCTION AND MOTIVATION]
 [RELATED WORK]
 [DataSet]
+[Measurement]
 
 ================================================================================
 ================================================================================
 
 【SIGIR (ACM SIGIR Conference on Research and Development in Information Retrieval)】
 (11)	SIGIR2013 - SESSION Recommender systems - Improve collaborative filtering through bordered block diagonal form matrices
-[ABSTRACT]
-[Categories and Subject Descriptors]
-[General Terms]
-[Keywords]
-[INTRODUCTION AND MOTIVATION]
-[RELATED WORK]
-[DataSet]
-
 The CF framework based on (A)BBDF structures of rating matrices proposed in this paper is capable of combining the advantages of community detection and matrix clustering techniques as well as making use of various CF algorithms. An important advantage of this framework is that it does not rely on a specific CF algorithm. Any CF algorithm that is based on rating matrices can be integrated into this framework, such as User-based, Item-based, SVD and NMF. Experimental results show that this framework helps these CF algorithms to improve the prediction accuracy and, at the same time, benefits system scalability.
 *(12)	SIGIR2013 - SESSION Recommender systems - Opportunity model for e-commerce recommendation - right product; right time
-Illustration of the relationship of variables. The user first makes a series of product purchases before timestamp tm. Then the user makes a purchase of item jm in category m at timestamp tm. This follow-up purchase in category m is the ith observation in category m. Suppose that the purchase of jm is triggered by item js at timestamp ts. Purchase time ym,i = tm − ts is the time gap between tm and ts. An observation i is associated with two major variables: 1) purchase time ym,i and 2) covariates xm,i (which is not shown in the figure).
+[ABSTRACT] We adapt the proportional hazards modeling approach in survival analysis to the recommendation research field and propose a new opportunity model to explicitly incorporate time in an e-commerce recommender system. The new model estimates the joint probability of a user making a follow-up purchase of a particular product at a particular time.
+[Categories and Subject Descriptors] H.3.3 [Information Storage and Retrieval]: Information Search and Retrieval
+[General Terms] Algorithms, Design, Experimentation
+[Keywords] Recommender System; Opportunity Model; E-commerce
+[INTRODUCTION AND MOTIVATION] From content-based, a system’s follow-up recommendation should include camera accessories instead of similar cameras. We extend the proportional hazards model in statistics with the hierarchical Bayesian framework as part of the solution, and derive detailed inference steps based on the variational Bayesian algorithm.
+[RELATED WORK] There are two major recommendation approaches: content-based filtering and collaborative filtering.
+In the field of recommender systems, the effect of time [10, 18, 24] has received some research attention recently. One focus is about the drift of the user’s preference over time [10, 23, 15]. Koren [10] revamped two popular collaborative filtering methods by modeling the time drifting factor of user preferences. Rendel et al. [15] proposed a factorized personalized model that subsumes both a common Markov chain and the normal matrix factorization model.
+Some recent work studied modeling the time interval between purchase orders in the e-commerce domain [18, 24]. Wang et al. [18] discovered different postpurchase behavior in different time windows after purchasing. Zhao et al. [24] used the purchasing time interval to improve the temporal diversity of recommendations [15]. The time interval and the corresponding purchase probability is modeled inside the framework of a utility-based recommender system [19].
+Our work explicitly models the joint probability of purchasing the product at the time based on a solid theoretical foundation. We explicitly model the conditional probability as a white box by leveraging Weibull distribution with various covariates to estimate the time-based probabilistic density.
+[DataSet] The purchase history from 2004-01-01 to 2009-03-08 collected on a real-world e-commerce website, shop.com, is used for our experiments.
+Tail users that made less than 5 product purchases are filtered out in the training data, which follows the similar pre-processing in related work [19, 24]. In addition, 10 possible spam users that made more than 200 product purchases are filtered out as well.
+[Measurement] MAE, MSE, MAPE, Conversion Rate CR@1 CR@5
+
 (13)	“Information Filtering”
 (14)	SIGIR2013 - SESSION Short papers 2 - filtering and recommending - Tagcloud-based explanation with feedback for recommender systems
 We develop a recommender system that allows users to provide feedback on the recommended items. Based on the feedback, we incrementally update the users’ profile to generate a new list of recommendations. Experiment results on the Movielens dataset show that the proposed approach is able to increase the acceptance rate of recommendations and improve user satisfaction.
@@ -59,7 +64,22 @@ The purpose of this tutorial is to survey those roots, and their relation to the
 Recently, ranking-oriented collaborative filtering (CF) algorithms have achieved great success in recommender systems. They obtained state-of-the-art performances by estimating a preference ranking of items for each user rather than estimating the absolute ratings on unrated items (as conventional rating-oriented CF algorithms do). In this paper, we propose a new ranking-oriented CF algorithm, called ListCF.
 Different from rating-oriented CF, ranking-oriented CF [18] directly predicts a preference ranking of items for each user. Similarly, ranking-oriented CF algorithms can be also categorized into memory-based ranking-oriented CF [15, 27] and model-based ranking-oriented CF [10, 20, 25].
 *(29)	SIGIR2015 - SESSION Session 5B Products - Learning Hierarchical Representation Model for NextBasket Recommendation
-To solve the above recommendation problem, here we present the proposed HRM in detail. The basic idea of our work is to learn a recommendation model that can involve both sequential behavior and users’ general taste, and meanwhile modeling complicated interactions among these factors in prediction.
+[ABSTRACT] Ideally, a good recommender should be able to explore the sequential behavior (i.e., buying one item leads to buying another next), as well as account for users’ general taste (i.e., what items a user is typically interested in) for recommendation. Moreover, these two factors may interact with each other to influence users’ next purchase. To tackle the above problems, in this paper, we introduce a novel recommendation approach, namely hierarchical representation model (HRM)
+[Categories and Subject Descriptors] H.2.8 [Database Management]: Database ApplicationsData Mining
+[General Terms] Algorithms, Experiments, Performance, Theory
+[Keywords] Hierarchical Representation Model; Sequential Behavior; General Taste; Next Basket Recommendation
+[INTRODUCTION AND MOTIVATION] In this task, usually sequential transaction data is given per user, where a transaction is a set/basket of items (e.g. shoes or bags) bought at one point of time. The target is to recommend items that the user probably want to buy in his/her next visit.
+One is sequential recommender [5, 25], mostly relying on Markov chains, which explores the sequential transaction data by predicting the next purchase based on the last actions. A major advantage of this model is its ability to capture sequential behavior for good recommendations, e.g. for a user who has recently bought a mobile phone, it may recommend accessories that other users have bought after buying that phone.
+The other is general recommender [1, 23], which discards any sequential information and learns what items a user is typically interested in. One of the most successful methods in this class is the model based collaborative filtering (i.e. matrix factorization models). Obviously, such general recommender is good at capturing the general taste of the user by learning over the user’s whole purchase history.
+FPMC -> independent assumption is not sufficient for good recommendations. -> HRM
+HRM allows us to flexibly use different types of aggregation operations at different layers. Especially, by employing nonlinear rather than linear operations, we can model more complicated interactions among different factors beyond independent assumption
+[RELATED WORK] Sequential recommender / General recommender / Hybrid model
+[DataSet] Ta-Feng / BeiRen / T-Mall
+The Ta-Feng dataset is a public dataset released by RecSys conference
+The BeiRen dataset comes from BeiGuoRenBai, a large retail enterprise in China
+The T-Mall dataset is a public online e-commerce dataset released by Taobao.
+[Measurement] F1, Hit Ratio, NDCG, versus BASELINE: TOP(The top popular items) / MC(A Markov chain model) / NMF(A state-of-the-art model based CF) / FPMC (A state-of-the-art hybrid model on next basket recommendation)
+
 (30)	SIGIR2015 - SESSION Session 9A Streams - Islands in the Stream - A Study of Item Recommendation within an Enterprise Social Stream
 Surprise Ratings
 (31)	SIGIR2015 - SESSION Short Papers - Automatic Feature Generation on Heterogeneous Graph for Music Recommendation
@@ -76,7 +96,16 @@ In fact, if a user has significant similar behaviors to a large number of other 
 (36)	SIGIR2016 - SESSION Recommendation Systems I - Discrete Collaborative Filtering
 We argue that such a scheme will result in a large quantization loss, which especially compromises the performance of large-scale CF that resorts to longer binary codes. In this paper, we propose a principled CF hashing framework called Discrete Collaborative Filtering (DCF), which directly tackles the challenging discrete optimization that should have been treated adequately in hashing. The formulation of DCF has two advantages: 1) the Hamming similarity induced loss that preserves the intrinsic user-item similarity, and 2) the balanced and uncorrelated code constraints that yield compact yet informative binary codes.
 *(37)	SIGIR2016 - SESSION Recommendation Systems I - How Much Novelty is Relevant. It Depends on Your Curiosity
+[ABSTRACT] Traditional recommendation systems (RSs), Discovery-oriented recommendation systems (DORSs) + Diffusion + Curiosity Distribution =  Curiosity-based recommendation system (CBRS) / The major contribution of this paper is a computational model of user curiosity, called Probabilistic Curiosity Model (PCM)
+[Categories and Subject Descriptors] N/A
+[General Terms] N/A
+[Keywords] Recommendation, curiosity, psychology, personalization
+[INTRODUCTION AND MOTIVATION] Several observations can be made. First, items with small SF (i.e., frequently accessed), small SR (i.e., recently accessed), and small Dissim (genre has been frequently and recently accessed) have small Nov values and thus are less novel.
+[RELATED WORK] There are several differences between CBRS and existing DORSs and PPBRS.
+[DataSet] Last.fm Dataset - 1K users
+[Measurement] Novelty Fitness, Recommendation Precision, Inter User Similarity
 Traditional recommendation systems (RSs) aim to recommend items that are relevant to the user’s interest. Unfortunately, the recommended items will soon become too familiar to the user and hence fail to arouse her interest. Discovery-oriented recommendation systems (DORSs) complement accuracy with discover utilities (DUs) such as novelty and diversity and optimize the tradeoff between the DUs and accuracy of the recommendations. Unfortunately, DORSs ignore an important fact that different users have different appetites for DUs. That is, highly curious users can accept highly novel and diversified recommendations whereas conservative users would behave in the opposite manner.
+
 *(38)	SIGIR2016 - SESSION Recommendation Systems II - Collaborative Filtering Bandits
 In this work, we investigate an adaptive clustering technique for content recommendation based on exploration-exploitation strategies in contextual multi-armed bandit settings. Our algorithm takes into account the collaborative effects that arise due to the interaction of the users with the items, by dynamically grouping users based on the items under consideration and, at the same time, grouping items based on the similarity of the clusterings induced over the users. The resulting algorithm thus takes advantage of preference patterns in the data in a way akin to collaborative filtering methods.
 *(39)	SIGIR2016 - SESSION Short Research Papers - A Dynamic Recurrent Model for Next Basket Recommendation
