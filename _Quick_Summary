@@ -107,11 +107,39 @@ We argue that such a scheme will result in a large quantization loss, which espe
 Traditional recommendation systems (RSs) aim to recommend items that are relevant to the user’s interest. Unfortunately, the recommended items will soon become too familiar to the user and hence fail to arouse her interest. Discovery-oriented recommendation systems (DORSs) complement accuracy with discover utilities (DUs) such as novelty and diversity and optimize the tradeoff between the DUs and accuracy of the recommendations. Unfortunately, DORSs ignore an important fact that different users have different appetites for DUs. That is, highly curious users can accept highly novel and diversified recommendations whereas conservative users would behave in the opposite manner.
 
 *(38)	SIGIR2016 - SESSION Recommendation Systems II - Collaborative Filtering Bandits
+[ABSTRACT] Classical collaborative filtering, and content-based filtering methods try to learn a static recommendation model given training data. These approaches are far from ideal in highly dynamic recommendation domains such as news recommendation and computational advertisement, where the set of items and users is very fluid.
+In this work, we investigate an adaptive clustering technique for content recommendation based on exploration-exploitation strategies in contextual multi-armed bandit settings.
+[Categories and Subject Descriptors] N/A
+[General Terms] N/A
+[Keywords] Filtering and Recommending; Recommender Systems; Online Learning; Collaborative Filtering; Clustering; Bandits; Regret; Computational Advertising; adaptive clustering procedures
+[INTRODUCTION AND MOTIVATION] In this paper, we introduce a Collaborative Filtering based stochastic multi-armed bandit method that allows for a flexible and generic integration of information of users and items interaction data by alternatively clustering over both user and item sides.
+We adapt COFIBA to the standard setting of sequential content recommendation known as (contextual) multi-armed bandits (e.g., [5]) for solving the canonical exploration vs. exploitation dilemma.
+[RELATED WORK] a number of state-of-the-art bandit algorithms: LINUCB-ONE / DYNUCB / LINUCB-IND / CLUB / LINUCB-V
+[DataSet] Yahoo! / Telefonica / Avazu
+[Measurement] clickthrough rate (CTR)
 In this work, we investigate an adaptive clustering technique for content recommendation based on exploration-exploitation strategies in contextual multi-armed bandit settings. Our algorithm takes into account the collaborative effects that arise due to the interaction of the users with the items, by dynamically grouping users based on the items under consideration and, at the same time, grouping items based on the similarity of the clusterings induced over the users. The resulting algorithm thus takes advantage of preference patterns in the data in a way akin to collaborative filtering methods.
+
 *(39)	SIGIR2016 - SESSION Short Research Papers - A Dynamic Recurrent Model for Next Basket Recommendation
-Next basket recommendation becomes an increasing concern. Most conventional models explore either sequential transaction features or general interests of users. Further, some works treat users’ general interests and sequential behaviors as two totally divided matters, and then combine them in some way for next basket recommendation. Moreover, the state-of-the-art models are based on the assumption of Markov Chains (MC), which only capture local sequential features between two adjacent baskets.
+[ABSTRACT] The state-of-the-art models are based on the assumption of Markov Chains (MC), which only capture local sequential features between two adjacent baskets. In this work, we propose a novel model, Dynamic REcurrent bAsket Model (DREAM), based on Recurrent Neural Network (RNN). DREAM not only learns a dynamic representation of a user but also captures global sequential features among baskets.
+The dynamic representation of a specific user can reveal user’s dynamic interests at different time, and the global sequential features reflect interactions of all baskets of the user over time.
+[Categories and Subject Descriptors] H.3 [Information Storage and Retrieval]: Information Filtering
+[General Terms] N/A
+[Keywords] Next basket recommendation, recurrent neural network
+[INTRODUCTION AND MOTIVATION] Nevertheless, all the MC based methods (including above FPMC and HRM) have the same deficiency that these recommenders can only model local sequential behaviors between every two adjacent baskets, and some of which may be irrelevant sometimes.
+[RELATED WORK] N/A
+[DataSet] Ta-Feng / T-mall
+[Measurement] F-1 / NDCG
+
 *(40)	SIGIR2016 - SESSION Short Research Papers - Collaborative Ranking with Social Relationships for Top-N Recommendations
-Although Collaborative Ranking (CR) models can produce accurate recommendation lists, in practice several real-world problems decrease their ranking performance, such as the sparsity and cold start problems. Here, to account for the fact that the selections of social friends can leverage the recommendation accuracy, we propose SCR, a Social CR model. Our model learns personalized ranking functions collaboratively, using the notion of Social Reverse Height, that is, considering how well the relevant items of users and their social friends have been ranked at the top of the list.
+[ABSTRACT] Here, to account for the fact that the selections of social friends can leverage the recommendation accuracy, we propose SCR, a Social CR model. Our model learns personalized ranking functions collaboratively, using the notion of Social Reverse Height.
+[Categories and Subject Descriptors] N/A
+[General Terms] N/A
+[Keywords] Recommendation systems; collaborative ranking; social relationships
+[INTRODUCTION AND MOTIVATION] Liu et al. [7] categorize learning to rank methods into point-wise, list-wise and pairwise. Although several approaches incorporate social relationships in the rating prediction problem, e.g. [8], a few attempts have been made in the top-N recommendation problem.
+[RELATED WORK]
+[DataSet] Epinions
+[Measurement] NDCG@10 / R@10 / R@100
+
 (41)	SIGIR2016 - SESSION Short Research Papers - Investment Recommendation using Investor Opinions in Social Media
 *(42)	SIGIR2016 - SESSION Short Research Papers - Multi-Rate Deep Learning for Temporal Recommendation
 In this work, we propose a novel deep neural network based architecture that models the combination of long-term static and short-term temporal user preferences to improve the recommendation performance.
