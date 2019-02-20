@@ -117,7 +117,6 @@ We adapt COFIBA to the standard setting of sequential content recommendation kno
 [RELATED WORK] a number of state-of-the-art bandit algorithms: LINUCB-ONE / DYNUCB / LINUCB-IND / CLUB / LINUCB-V
 [DataSet] Yahoo! / Telefonica / Avazu
 [Measurement] clickthrough rate (CTR)
-In this work, we investigate an adaptive clustering technique for content recommendation based on exploration-exploitation strategies in contextual multi-armed bandit settings. Our algorithm takes into account the collaborative effects that arise due to the interaction of the users with the items, by dynamically grouping users based on the items under consideration and, at the same time, grouping items based on the similarity of the clusterings induced over the users. The resulting algorithm thus takes advantage of preference patterns in the data in a way akin to collaborative filtering methods.
 
 *(39)	SIGIR2016 - SESSION Short Research Papers - A Dynamic Recurrent Model for Next Basket Recommendation
 [ABSTRACT] The state-of-the-art models are based on the assumption of Markov Chains (MC), which only capture local sequential features between two adjacent baskets. In this work, we propose a novel model, Dynamic REcurrent bAsket Model (DREAM), based on Recurrent Neural Network (RNN). DREAM not only learns a dynamic representation of a user but also captures global sequential features among baskets.
