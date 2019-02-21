@@ -141,11 +141,39 @@ The dynamic representation of a specific user can reveal user’s dynamic intere
 
 (41)	SIGIR2016 - SESSION Short Research Papers - Investment Recommendation using Investor Opinions in Social Media
 *(42)	SIGIR2016 - SESSION Short Research Papers - Multi-Rate Deep Learning for Temporal Recommendation
-In this work, we propose a novel deep neural network based architecture that models the combination of long-term static and short-term temporal user preferences to improve the recommendation performance.
+[ABSTRACT] In this work, we propose a novel deep neural network based architecture that models the combination of long-term static and short-term temporal user preferences to improve the recommendation performance. To train the model efficiently for large-scale applications, we propose a novel pre-train method to reduce the number of free parameters significantly.
+[Categories and Subject Descriptors] N/A
+[General Terms] N/A
+[Keywords] N/A
+[INTRODUCTION AND MOTIVATION] Specifically, in this work, we propose a multi-rate temporal deep learning model that jointly optimizes long-term and short-term user interests to improve the recommendation quality. The model consists of several components: a Deep Semantic Structured Model (DSSM)
+two LSTM-based temporal models to capture daily and weekly user temporal patterns; and an LSTM temporal model to capture global user interests.
+TEMPORAL DEEP SEMANTIC STRUCTURED MODEL (TDSSM) / Mutli-Rate TDSSM (MR-TDSSM)
+[RELATED WORK] In recommendation systems, temporal modeling of data is an important element in many tasks such as news recommendation [16, 15], movie recommendation [14, 23], and recently, music recommendation [12]. It has been shown to improve results over non-temporal model significantly. In this section, we will survey some of the recent approaches and refer readers to a more extensive review on temporal recommendation in [5].
+In [14], the matrix factorization model / Using deep learning approaches
+[DataSet] The data set used in our experiment comes from a commercial news portal which serves millions of daily users in a variety of countries and languages. The dataset consists of user’s news click history between 04/01/2014 and 09/30/2014.
+[Measurement] P@1 P@5 AUC MAP MRR
+
 *(43)	SIGIR2016 - SESSION Short Research Papers - Network-Aware Recommendations of Novel Tweets
-In this paper, we present a novel tweet-recommendation approach, which exploits network, content, and retweet analyses for making recommendations of tweets. The idea is to recommend tweets that are not visible to the user (i.e., they do not appear in the user timeline) because nobody in her social circles published or retweeted them.
+[ABSTRACT] In this paper, we present a novel tweet-recommendation approach, which exploits network, content, and retweet analyses for making recommendations of tweets. The idea is to recommend tweets that are not visible to the user (i.e., they do not appear in the user timeline) because nobody in her social circles published or retweeted them. To do that, we create the user’s ego-network up to depth two and apply the transitivity property of the friendsof-friends relationship to determine interesting recommendations, which are then ranked to best match the user’s interests.
+[Categories and Subject Descriptors] N/A
+[General Terms] N/A
+[Keywords] Tweet Recommendation, Content and Network Analysis
+[INTRODUCTION AND MOTIVATION] Our recommendation approach is based on recommending tweets that cannot be seen by the user, for example, because nobody in her circles wrote or retweeted them. Twitter users who subscribe to our system receive recommendations of novel tweets, which do not appear in their timeline but which are of potential interest.
+[RELATED WORK] Followee recommendations / Tweet-based content recommendations / Tweet recommendations
+[DataSet] Twitter data
+[Measurement] Precision@1~5 / NDCG@1~5
+
 *(44)	SIGIR2016 - SESSION User Needs - Going back in Time - An Investigation of Social Media Re-finding
+[ABSTRACT] Finally, weshow that by using statistical modelling it is possible to pre-dict if a Tweet has future utility and is likely to be re-found.Our ﬁndings have implications for the design of social mediasearch systems and interfaces, in particular for Twitter, tobetter support users re-ﬁnd previously seen content.
+[Categories and Subject Descriptors] H.3.3 - Informa-tion Search and Retrieval: Search process
+[General Terms] Measurement, Human Factors
+[Keywords] Clickstream Analysis, Re-ﬁnding, Twitter
+[INTRODUCTION AND MOTIVATION] We examine the relationship between FAV-ing, RT-ingand re-ﬁnding and discover that if people are tryingto bookmark Tweets for future use as the literaturesuggests, they are not doing so with any great success
+[RELATED WORK] Insights into Life-cycle of Tweets / Personal Information Management (PIM) / PIM on Twitter
+[DataSet] We developed a Chrome web-browser extension to col-lect user interactions with the Twitter website. 
 We present results from a 5 month-long naturalistic, log-based study of user interaction with Twitter, which suggest re-finding to be a regular activity and that Tweets can offer utility for longer than one might think.
+[Measurement] Tweet features / Sender-related features / Session features / User features, F1-Score / Accuracy / AUC
+
 *(45)	SIGIR2017 - SESSION Session 2B Filtering and Recommending 1 - Cross-Domain Recommendation via Clustering on Multi-Layer Graphs
 4.3 Spectral clustering on multi-layer graph
 *(46)	SIGIR2017 - SESSION Session 2B Filtering and Recommending 1 - Item Silk Road - Recommending Items from Information
