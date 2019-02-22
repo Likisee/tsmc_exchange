@@ -174,15 +174,43 @@ In [14], the matrix factorization model / Using deep learning approaches
 We present results from a 5 month-long naturalistic, log-based study of user interaction with Twitter, which suggest re-finding to be a regular activity and that Tweets can offer utility for longer than one might think.
 [Measurement] Tweet features / Sender-related features / Session features / User features, F1-Score / Accuracy / AUC
 
-*(45)	SIGIR2017 - SESSION Session 2B Filtering and Recommending 1 - Cross-Domain Recommendation via Clustering on Multi-Layer Graphs
-4.3 Spectral clustering on multi-layer graph
-*(46)	SIGIR2017 - SESSION Session 2B Filtering and Recommending 1 - Item Silk Road - Recommending Items from Information
-Online platforms can be divided into information-oriented and social-oriented domains. e former refers to forums or Ecommerce sites that emphasize user-item interactions, like Trip.com and Amazon; whereas the later refers to social networking services (SNSs) that have rich user-user connections, such as Facebook and Twitter. Despite their heterogeneity, these two domains can be bridged by a few overlapping users, dubbed as bridge users. In this work, we address the problem of cross-domain social recommendation, i.e., recommending relevant items of information domains to potential users of social networks. To our knowledge, this is a new problem that has rarely been studied before.
-可抄abstract
+**(45)	SIGIR2017 - SESSION Session 2B Filtering and Recommending 1 - Cross-Domain Recommendation via Clustering on Multi-Layer Graphs
+[ABSTRACT] Group knowledge is derived based on new crosssource user community detection approach, which utilizes both inter-source relationship and the ability of sources to complement each other. To fully utilize multi-source multi-view data, we process user-generated content by employing state-of-the-art text, image, and location processing techniques.
+[Categories and Subject Descriptors] N/A
+[General Terms] N/A
+[Keywords] N/A
+[INTRODUCTION AND MOTIVATION] we introduce a novel recommender framework C 3R that utilizes group and individual knowledge to perform Cross-Source User Community-Based Collaborative venue category Recommendation.
+The main contributions of this paper are threefold: First, we present a cross-source venue recommendation framework that utilizes both individual and group knowledge; second, we propose a novel cross-source user community detection approach that utilizes both inter-source relationship and sources’ ability to complement each other via efficient regularization; third, we suggest a new approach for automatic construction of inter-source relationship graph based on the data, which eliminates the necessity of having expert knowledge.
+[RELATED WORK] recommendation across data sources / data integration / group representation learning
+[DataSet] we evaluate the C 3R recommendation framework based on largest available multi-source multimodal cross-region social dataset NUS-MSS [19]. The dataset is provided for three social networks (Twitter, Foursquare, and Instagram)
+In addition to the features provided by NUS-MSS dataset, we extracted a 48-dimensional temporal feature and 4 mobility features.
+[Measurement] Normalized Discounted Cumulative Gain (NDCG) / Average Precision (AP) / Popular (POP) / PopularAll (POPAll) / Multi-Source Re-Ranking (MSRR) / Nearest Neighbor Collaborative Filtering (CF) / Early Fusion (EF) / Implicit Feedback-Enhanced Singular Value Decomposition (SVD++) / Factorization Machines (FM)
+
+**(46)	SIGIR2017 - SESSION Session 2B Filtering and Recommending 1 - Item Silk Road - Recommending Items from Information
+[ABSTRACT] (可抄abstract) In this work, we address the problem of cross-domain social recommendation, i.e., recommending relevant items of information domains to potential users of social networks. To our knowledge, this is a new problem that has rarely been studied before.
+• RQ1: Can our NSCR approach outperform the state-of-theart recommendation methods for the new cross-domain social recommendation task?
+• RQ2: How do dierent hyper-parameter seings (e.g., the dropout ratio and tradeo parameters) aect NSCR?
+• RQ3: Are deeper hidden layers helpful for learning from useritem interaction data and improving the performance of NSCR?
+[Categories and Subject Descriptors]
+[General Terms] •Information systems → Social recommendation; Retrieval models and ranking; Recommender systems;
+[Keywords] Cross-domain Recommendation, Deep Collaborative Filtering, Neural Network, Deep Learning
+[INTRODUCTION AND MOTIVATION] In this work, we propose a novel solution named Neural Social Collaborative Ranking (NSCR) for the new task of cross-domain social recommendation. It is developed based on the recent advance of neural collaborative ltering (NCF) [11], which is further extended to model the cross-domain social relations by combining with the graph regularization technique [9].
+[RELATED WORK] To our knowledge, we are the rst to introduce the task of crossdomain social recommendation
+[DataSet] We treated Trip.com as the information domain, Facebook and Twier as the social domains.
+[Measurement] AUC: Area under the curve (AUC) / R@5 / p-value / Baselines: ItemPop, MF, SFM, SR
+
 (47)	SIGIR2017 - SESSION Session 3B Filtering and Recommending 2 - Personalized Key Frame Recommendation
 2.3 Time-synchronized Comments
 *(48)	SIGIR2017 - SESSION Session 5B Filtering and Recommending 3 - Content Recommendation for Viral Social Influence
-In this paper, we address the natural problem that arises in such circumstances: Suggest content, expressed as a limited set of attributes, for a creative promotion campaign that starts out from a given seed set of initiators, so as to maximize its expected spread over a social network. To our knowledge, no previous work addresses this problem. Wef nd that the problem is NP-hard and inapproximable. As a tight approximation guarantee is not admissible, we design an efficient heuristic, Explore-Update, as well as a conventional Greedy solution. Our experimental evaluation demonstrates that Explore-Update selects near-optimal attribute sets with real data, achieves 30% higher spread than baselines, and runs an order of magnitude faster than the Greedy solution.
+[ABSTRACT]
+[Categories and Subject Descriptors] N/A
+[General Terms] N/A
+[Keywords] e influence maximization (IM) / content attributes / user attributes
+[INTRODUCTION AND MOTIVATION]
+[RELATED WORK] Idea Habitats / Digital Influence / Influence Maximization / Greedy / Top-Nodes / Top-Edges / Brute-Force
+[DataSet]  The firrst network is a peer-to-peer file sharing directed network Gnutella3 , where nodes represent hosts and edges represent connections between the Gnutella hosts. Our second network is extracted by crawling the social network VK4 ; nodes are users and edges are friendships among them. Statistics are presented in Table 1.
+[Measurement] influece speed
+
 (49)	SIGIR2017 - SESSION Session 5B Filtering and Recommending 3 - Embedding Factorization Models for Jointly Recommending Items and User Generated Lists
 似乎很屌,但是公式也是很複雜,話說不要陷入recommending list/rank
 (50)	SIGIR2017 - SESSION Session 7A Social - Hierarchical Community-Level Information Diffusion Modeling in Social Networks
