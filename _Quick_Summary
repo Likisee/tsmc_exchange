@@ -219,18 +219,57 @@ In addition to the features provided by NUS-MSS dataset, we extracted a 48-dimen
 (52)	SIGIR2017 - SESSION Short Research Papers - Building Your Own Reading List Anytime via Embedding Relevance, Quality, Timeliness and Diversity
 The reading interests changes from time to time, thus Timeliness is another factor to represent the diﬀerences among popularity of books. Compared to Quality, this factor concerns more about the popularity trends, like what genres of books are more popular at that time. Therefore, the simplest way to embed the timeliness is to compare with the most popular books.
 *(53)	SIGIR2017 - SESSION Short Research Papers - Generating and Personalizing Bundle Recommendations on Steam
-In this paper, we seek to understand the semantics of what constitutes a ‘good’ bundle, in order to recommend existing bundles to users on the basis of their constituent products, as well the more difficult task of generating new bundles that are personalized to a user.
+[ABSTRACT] . In this paper, we seek to understand the semantics of what constitutes a ‘good’ bundle, in order to recommend existing bundles to users on the basis of their constituent products, as well the more difficult task of generating new bundles that are personalized to a user.
+[Categories and Subject Descriptors] N/A
+[General Terms] N/A
+[Keywords] N/A
+[INTRODUCTION AND MOTIVATION] In this paper, we seek to apply recommender systems techniques to bundle generation and recommendation tasks. Bundles are ubiquitous on e-commerce platforms, though the semantics of how to compose and recommend them have rarely been studied.
+We build upon latent factor models, and in particular Bayesian Personalized Ranking (BPR) [11], which is trained using implicit feedback (i.e., purchases vs. non-purchases) in order to estimate rankings of items that are likely to be interacted with.
+[RELATED WORK] (這句話抄起來) We build upon latent factor models, and in particular Bayesian Personalized Ranking (BPR) [11], which is trained using implicit feedback (i.e., purchases vs. non-purchases) in order to estimate rankings of items that are likely to be interacted with.
+Also related are systems that recommend items to groups of users (i.e., recommending items to sets of users, as opposed to recommending sets of items to users).
+We also build on systems that consider item aggregate diversity. / Finally, given that our goal is to generate sets of items, our work is related to papers that study basket recommendation and item compatibility.
+[DataSet] We focus on the Australian Steam community, by crawling users from the ‘GameAus’ community. / a new dataset from the Steam video game distribution platform, which is unique in that it contains both ‘traditional’ recommendation data (rating and purchase histories between users and items), as well as bundle purchase information.
+[Measurement] aggregate diverstiy / AUC / We compare the performance of our bundle ranking model against several baselines: (1) Regular BPR (BPR); (2) Bundle BPR using item features (I-BPR); (3) Our ‘vanilla’ model without bundle size and bundle correlation (BR); and (4) BR with bundle size (BR + N). Finally we report (5) our proposed model including size and bundle correlation (BR + N + C).
+
 (54)	SIGIR2017 - SESSION Short Research Papers - The Impact of Linkage Methods in Hierarchical Clustering for Active Learning to Rank
 Our method is based on hierarchical agglomerative clustering (average linkage) and we also report the performance of other linkage criteria that measure the distance between two clusters of query-document pairs. Another difference from previous hierarchical clustering is that we cluster the instances belonging to the same query, which usually outperforms the baselines.
 【WWW (ACM International World Wide Web Conference)】
 (55)	WWW2013 - SESSION Research papers - DIGTOBI - a recommendation system for Digg articles using probabilistic modeling
 想法好,但公式太長!!
-*(56)	WWW2013 - SESSION Research papers - Diversified recommendation on graphs - pitfalls, measures, and algorithms
-雖然研究方向不同,但必看! GRAPH相關且非常完整!
+**(56)	WWW2013 - SESSION Research papers - Diversified recommendation on graphs - pitfalls, measures, and algorithms
+[ABSTRACT] In this paper, we show the deficiencies of popular evaluation techniques of diversification methods, and investigate multiple relevance and diversity measures to understand whether they have any correlations. 
+Next, we propose a novel measure called expanded relevance which combines both relevance and diversity into a single function in order to measure the coverage of the relevant part of the graph. 
+We also present a new greedy diversification algorithm called BestCoverage, which optimizes the expanded relevance of the result set with (1−1/e)-approximation.
+[Categories and Subject Descriptors] H.3.3 [Information Search and Retrieval]: Search process; H.3.4 [Systems and Software]: Performance evaluation (efficiency and effectiveness)
+[General Terms] N/A
+[Keywords] diversity; relevance; graph mining; result diversification
+[INTRODUCTION AND MOTIVATION] Algorithms developed for graph-based recommendation are very popular among web services; for instance, Amazon uses co-purchasing information to recommend products to its customers, IMDB recommends movies to its visitors based on the information such as director, cast, and ratings, and Google uses the web-graph and the user histories for personalized web search.
+In this work, we assume that the graph itself is the only information we have, and no categories or intents are available. We are interested in providing recommendations based on a set of objects of interest.
+As the first contribution, we show that such an evaluation is inappropriate. Indeed, we design query-oblivious algorithms
+[RELATED WORK]  PageRank and personalized PageRank / Diversification by query refinement. / Diversification by vertex selection.
+[DataSet] Stanford Large Network Dataset Collection5. In summary, 
+amazon0601 is the Amazon product co-purchasing network collected on June 2003. 
+ca-AstroPh is the collaboration network between authors of the papers submitted to arXiv astrophysics category. 
+cit-Patents is the citation network between U.S. patents granted between 1975 and 1999. 
+soc-LiveJournal1 is the graph of LiveJournal social network
+web-Google is the web graph released in 2002 by Google
+[Measurement] Normalized relevance / Difference ratio / nDCG / l-step graph density / l-expansion ratio / Maximum Marginal Relevance (MMR)
+
 (57)	WWW2013 - SESSION Research papers - Do social explanations work - studying and modeling the effects of social explanations in recommender systems
 experiment design
 *(58)	WWW2013 - SESSION Research papers - SoCo - a social network aided context-aware recommender system
+[ABSTRACT] In this paper, we propose SoCo, a novel context-aware recommender system incorporating elaborately processed social network information.
+A context-aware version of Pearson Correlation Coefficient is proposed to measure user similarity.
+[Categories and Subject Descriptors] H.3.3 [Information Search and Retrieval]: Information filtering; J.4 [Computer Applications]: Social and Behavior Sciences
+[General Terms] N/A
+[Keywords] Recommender System, Context-awareness, Matrix Factorization, Social Networks
+[INTRODUCTION AND MOTIVATION] Although collaborative filtering has become the standard method for the recommendation problem, traditional recommender systems only use ratings of relevant users/items to make recommendations without taking into account any other information. This trait, when information volume becomes larger and larger, poses crucial challenges such as data sparsity (i.e., insufficient similar users/items can be found), low recommendation quality (due to data sparsity, as well as homogeneity of the information source), etc.
+In order to handle the issues of traditional recommendation models, recently, two trends in the community of recommender systems have attracted a lot of attention: (1) Contextual information (e.g., time, location, mood, weather, etc.) (2) The fast growth of online social networks has brought another trend of so called social1 recommendation
+[RELATED WORK] Matrix factorization / Context-aware recommender systems / Social recommendation
+[DataSet] MovieLens-1M dataset / Douban7 is one of the largest Chinese social platforms for sharing reviews and recommendations for books, movies and music. Each user can provide ratings (ranging from one star to five stars) to books, movies and music, indicating his/her preference on the item. A timestamp is associated with a rating. A user, although has not consumed an item (i.e., no rating is provided), may still express his/her interest by indicating “wish” (e.g., wish to read the book).
+[Measurement] MAE / RMSE / over Basseline SoCo / SoReg / RMF / BMF / Item-based CF / User-based CF
 必看,用context變成第三個axis!!
+
 (59)	WWW2013 - SESSION Research papers - TopRec - domain-specific recommendation through community topic mining in social networkWWW2013 - SESSION Research papers - TopRec - domain-specific recommendation through community topic mining in social networkop
 topic model
 (60)	WWW2013 - SESSION Research papers - Whom to mention - expand the diffusion of tweets by @ recommendation on micro-blogging systems
