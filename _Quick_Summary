@@ -276,15 +276,45 @@ topic model
 Statistical Indicators on Modeling User Influence, Evaluation Metrics
 We evaluate the results using both standard information retrieval metrics[14][9] and metrics featuring on measuring information propogation[35]. In particular, we use the following metrics: precision (P ), average precision at K (AP @K), retweet times (RT ), user coverage (Cov) and normalized user coverage (Cov N)
 *(61)	WWW2014 - SESSION The future - Exploring the filter bubble - the effect of using recommender systems on content diversity
+[ABSTRACT] This paper examines the longitudinal impacts of a collaborative filtering-based recommender system on users.
+[Categories and Subject Descriptors] H.1 [Information Systems]: Personalization, Recommender systems; H.1 [Human-centered computing]: Collaborative filtering
+[General Terms] N/A
+[Keywords] filter bubble; recommender system; content diversity; user experience; tag-genome; longitudinal data
+[INTRODUCTION AND MOTIVATION] But from the early days of recommender systems, researchers have wondered whether recommender systems might cause the ‘global village’ to fracture into tribes [12], leading to ‘balkanization’ [17]. Pariser [11] characterizes this worry in terms of a ‘filter bubble’ – a self-reinforcing pattern of narrowing exposure that reduces user creativity, learning, and connection.
+First, we separate users into categories based on how often they actually consume recommended content. This separation lets us focus on users where a filter bubble is possible, and to compare these users against a control group who use the same system 677 but do not regularly follow recommendations. 
+Second, we introduce a method and metric for exploring changes in the diversity of consumed items over time.
+[RELATED WORK] While there is little debate about the efficacy of recommender systems in commerce, the debate about whether recommender systems are harmful to users has plenty of scholars on each side.
+[DataSet] Longitudinal data: MovieLens provides us longitudinal data of user rating data. MovieLens logs capture timestamps and other information when users rate movies and when they view pages of recommended movies.
+After removing these initial movies, we formulate intervals for the remaining rating history of a user. There are several ways to define an interval. One is to define an interval as a login session. Another is to define an interval as a block of n consecutive months.
+[Measurement] Rating mean change / Percentile change
+
 (62)	WWW2015 - SESSION Technical Papers 1 - ACCAMS - Additive Co-Clustering to Approximate Matrices Succinctly
 Co-Clustering 好多實驗, 好多數學!!
 *(63)	WWW2015 - SESSION Technical Papers 1 - Daily-Aware Personalized Recommendation based on Feature-Level Time Series Analysis
+[ABSTRACT] In this paper, we make use of the large volume of textual reviews for the automatic extraction of domain knowledge, namely, the explicit features/aspects in a specific product domain.
+Technically, we develop the Fourier-assisted Auto-Regressive Integrated Moving Average (FARIMA) process to tackle with the year-long seasonal period of purchasing data to achieve daily-aware preference predictions, and we leverage the conditional opportunity models for daily-aware personalized recommendation.
+[Categories and Subject Descriptors] H.3.3 [Information Search and Retrieval]: Information Filtering; G.3 [Mathematics of Computing]: Probability and Statistic - Time Series Analysis
+[General Terms] N/A
+[Keywords] Recommender Systems; Time Series Analysis; Collaborative Filtering; Sentiment Analysis
+[INTRODUCTION AND MOTIVATION] = RELATED WORK
+[RELATED WORK] (寫PAPER前都可參考一下) NMF / timeSVD++ / Tensor / EFM
+[DataSet] We obtained the real-world reviews in the cosmetic domain of JD.com, the second largest e-commerce website in China, from Jan. 1st, 2011 to Mar. 31st, 2014. The dataset covers all the reviews of three consecutive years and a quarter, which is sufficient for daily-aware time series modeling.
+[Measurement] Precision / Recal / F1-score
+
 (64)	WWW2015 - SESSION Technical Papers 1 - Recommendation Subgraphs for Web Discovery
 (65)	WWW2015 - SESSION Technical Papers 1 - Who, What, When, and Where - Multi-Dimensional Collaborative Recommendations Using Tensor Factorization on Sparse User-Generated Data
 (66)	WWW2016 - SESSION Session 2 - Economic Recommendation with Surplus Maximization
 (67)	WWW2016 - SESSION Session 2 - When do Recommender Systems Work the Best - The Moderating Effects of Product Attributes and Consumer Reviews on Recommender Performance
 *(68)	WWW2016 - SESSION Session 12 - Modeling User Consumption Sequences
-repeat consumption, Boredom in consumption sequences
+[ABSTRACT] We identify two macroscopic behavior patterns of repeated consumptions. First, in a given user’s lifetime, very few items live for a long time. Second, the last consumptions of an item exhibit growing inter-arrival gaps consistent with the notion of increasing boredom leading up to eventual abandonment.
+[Categories and Subject Descriptors] N/A
+[General Terms] N/A
+[Keywords] sequence mining; repeat consumption; boredom
+[INTRODUCTION AND MOTIVATION] Temporal model /  Novelty model / Choice model
+[RELATED WORK] Repeat consumption / Boredom in consumption sequences / Navigation on the web
+[DataSet] LASTFM and LASTFMARTISTS. /  YOUTUBE and YOUTUBEMUSIC. / MAPCLICKS. / WIKICLICKS. / BRIGHTKITE. / GPLUS.
+[Measurement] Probability / Median
+
 (69)	WWW2016 - SESSION Session 26B - The Effect of Recommendations on Network Structure
 又是WTF, 好多數學
 (70)	WWW2016 - SESSION Session 27A - Learning-to-Rank for Real-Time High-Precision Hashtag Recommendation for Streaming News
