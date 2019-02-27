@@ -322,10 +322,40 @@ Technically, we develop the Fourier-assisted Auto-Regressive Integrated Moving A
 (72)	WWW2017 - SESSION 1H Recommeder Systems 1 - Beyond Globally Optimal - Focused Learning for Improved Recommendations
 (73)	WWW2017 - SESSION 1H Recommeder Systems 1 - Neural Collaborative Filtering
 *(74)	WWW2017 - SESSION 2H Recommeder Systems 2 - Streaming Recommender Systems
-*(75)	WWW2017 - SESSION 5B Crowdsourcing 2 - Optimizing the Recency-Relevancy Trade-off in Online News Recommendations
-Yahoo! news, CLEF NewsREEL, and NYTimes datasets
-WSDM (ACM International Conference on Web Search and Data Mining)
-*(76)	WSDM2013 - SESSION Web mining, prediction, and recommendation - Using early view patterns to predict the popularity of youtube videos
+[ABSTRACT] In particular, we provide a principled framework termed sRec, which provides explicit continuous-time random process models of the creation of users and topics, and of the evolution of their interests. A variational Bayesian approach called recursive meanfield approximation is proposed
+[Categories and Subject Descriptors] N/A
+[General Terms] N/A
+[Keywords] Streaming, recommender system, online learning, continuous time, data stream.
+[INTRODUCTION AND MOTIVATION] the following challenges: Real-time updating / Unknown size / Concept shift
+[RELATED WORK] 5.1 Online Recommender System / (抄) 5.2 Time-aware Recommendations
+[DataSet] MovieLens Latest Small / MovieLens-10M / Netflix / Netflix uses scaled ratings ranging from 1 to 5, while Last.fm recommends music to target user based on their listening behaviors.
+[Measurement] root mean square error (RMSE) / Baseline: PMF / MDCR / Time-SVD++ / GPFM
+
+**(75)	WWW2017 - SESSION 5B Crowdsourcing 2 - Optimizing the Recency-Relevancy Trade-off in Online News Recommendations
+[ABSTRACT] When recommending news stories, there are two basic metrics of interest – recency and relevancy. So, in this paper, we propose a new recommendation strategy (called Highest Future-Impact) which attempts to optimize on both the axes.
+[Categories and Subject Descriptors] N/A
+[General Terms] N/A
+[Keywords] Front-page News Selection; Non-personalized Recommender Systems; Recency; Relevancy
+[INTRODUCTION AND MOTIVATION] In summary, the paper makes the following three contributions: (i) we analyze the recency-relevancy trade-offs achieved by current news recommendation strategies and show them to be sub-optimal, 
+(ii) we propose a simple yet previously overlooked strategy that selects stories based on their future-impact, and show that it has the potential to achieve better recency-relevancy trade-offs than current strategies, and 
+(iii) we propose a practical implementation of futureimpact based recommendation strategy, tackling the challenge of estimating and accounting for uncertainties in predicting future-impact.
+Ideally, recommender systems should select the most relevant stories while they are still recent, i.e., soon after they are published.
+the choice of ∆t is crucial in determining the type of stories being recommended. When ∆t is large, this strategy is similar to recommending highest recent-impact stories. Whereas, if ∆t is small, the recommendation strategy tends to pick flash in the pan stories which have high instantaneous peaks in popularity
+[RELATED WORK] Personalized vs. non-personalized news recommendations / Predicting popularity of online contents / Recency vs Relevancy debate:
+[DataSet] Yahoo! News Dataset / CLEF NewsREEL Dataset / NYTimes Dataset
+[Measurement] Recency / Relevancy / Increase / No change / Decrease over OLS / OTB
+MODEL BASE 印度人好文
+
+**(76)	WSDM2013 - SESSION Web mining, prediction, and recommendation - Using early view patterns to predict the popularity of youtube videos
+[ABSTRACT] We here present two simple models for predicting the future popularity of Web content based on historical information given by early popularity measures.
+[Categories and Subject Descriptors] C.4 [Computer Systems Organization]: Performance of Systems - Measurement techniques; H.3.5 [Information Storage and Retrieval]: Online Information Services - Web-based services
+[General Terms] Experimentation, Measurement
+[Keywords] popularity prediction; YouTube; regression models
+[INTRODUCTION AND MOTIVATION] While the reported results produced by the Szabo and Huberman (S-H) model are reasonably accurate, especially given its simplicity, the model does have shortcomings.
+[RELATED WORK] S-H model
+[DataSet] We evaluate our models, comparing them against the S-H model, on two datasets of YouTube videos. /  Top / Random
+[Measurement] mRSE
+
 (77)	WSDM2014 - SESSION Recommender systems - Who likes it more - mining worth-recommending items from long tails by modeling relative preference
 (78)	WSDM2014 - SESSION Recommender systems and networks - Personalized entity recommendation - a heterogeneous information network approach
 *(79)	WSDM2015 - SESSION Session 6 Crowdsourcing, Temporal and Location-based mining - Just in Time Recommendations - Modeling the Dynamics of Boredom in Activity Streams
