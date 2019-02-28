@@ -358,14 +358,43 @@ MODEL BASE 印度人好文
 
 (77)	WSDM2014 - SESSION Recommender systems - Who likes it more - mining worth-recommending items from long tails by modeling relative preference
 (78)	WSDM2014 - SESSION Recommender systems and networks - Personalized entity recommendation - a heterogeneous information network approach
-*(79)	WSDM2015 - SESSION Session 6 Crowdsourcing, Temporal and Location-based mining - Just in Time Recommendations - Modeling the Dynamics of Boredom in Activity Streams
-*(80)	WSDM2016 - SESSION Communities and Social Interaction - CCCF - Improving Collaborative Filtering via Scalable User-Item Co-Clustering
-可以抄abstract
+**(79)	WSDM2015 - SESSION Session 6 Crowdsourcing, Temporal and Location-based mining - Just in Time Recommendations - Modeling the Dynamics of Boredom in Activity Streams
+[ABSTRACT] In this paper, weanalyze activity streams and show that user’s temporal con-sumption of familiar items is driven by boredom. Speciﬁ-cally, users move on to a new item when they get bored andreturn to the item when their interest is restored.
+[Categories and Subject Descriptors] N/A
+[General Terms] N/A
+[Keywords] N/A
+[INTRODUCTION AND MOTIVATION] Theexisting internet platforms (such as Last.fm, Netﬂix.com)allow users to engage with two types of items in a session
+For instance, in the Last.fm music data set, on average every user interacts with 23% of new items,and 77% of activities are with the familiar items.
+The gap-behavior in activity streams is governed by twoimportant content consumption characteristics: (1) user isdeﬁnitely not interested in an item she is bored of (despiteits popularity and her own past interest) and (2) user mayrevisit the item, if her interest is restored. This is an impor-tant observation in consumer research in order to understandthe changing consumer preferences [35,15].
+We explicitly model user latent psychological states, sen-sitization and boredom, using a Hidden Semi-Markov Model(HSMM) and use the model to predict the the gap betweenuser activities. The model works in an online manner whichis well-suited for activity streams. Furthermore, our modelis ﬂexible enough to compute a preference score for itemsas a function of time. We use this ﬂexibility to propose aSTiC recommender that ranks familiar items based on thedynamic preference score.
+[RELATED WORK] The problem of recommending interesting items to usersbased on their history of past ratings and user proﬁle hasbeen well-studied for a few decades now.
+There are several recent related work that discuss the im-portance of understanding the changing user interests overtime [43,29,7,12,33,27].
+There are also some work on implicit feedback data sets[19,3].
+[DataSet] Last.fm
+[Measurement] RMSE / T-Precision / T-Recall / T-F1T-AUC / T-Rank
+
+**(80)	WSDM2016 - SESSION Communities and Social Interaction - CCCF - Improving Collaborative Filtering via Scalable User-Item Co-Clustering
+[ABSTRACT] However, users might have different interests over different topics, thus might share similar preferences with different groups of users over different sets of items. In this paper, we propose a novel and scalable method CCCF which improves the performance of CF methods via user-item co-clustering. CCCF first clusters users and items into several subgroups, where each subgroup includes a set of like-minded users and a set of items in which these users share their interests.
+[Categories and Subject Descriptors] H.3.3 [Information Search and Retrieval]: Information Filtering
+[General Terms] N/A
+[Keywords] Collaborative Filtering; Recommender Systems; Co-Clustering
+[INTRODUCTION AND MOTIVATION] In this paper, we propose a novel co-clustering method, called CCCF (CO-CLUSTERING FOR COLLABORATIVE FILTERING). In CCCF
+[RELATED WORK] 
+[DataSet] Lastfm / MovieLens / Netflix / Yelp
+[Measurement] Precision / Recall / F-measure / Mean Average Precision (MAP)
+
 (81)	WSDM2017 - SESSION Paper Session 1 Social and Information Networks - Evolution of Ego-networks in Social Media with Link Recommendations
 (82)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Directed Edge Recommender System
 *(83)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Multi-Product Utility Maximization for Economic Recommendation
-MPUM integrates the economic theory of consumer choice with personalized recommendation, and focuses on the utility of sets of product sets for individual users. MPUM considers what the users already have when recommending additional products. We evaluate MPUM against several popular recommendation algorithms on two real-world E-commerce datasets. Results confirm the underlying economic intuition, and show that MPUM significantly outperforms the comparison algorithms under top-K evaluation metrics.
-Shop.com Data. Amazon Baby Registry Data.
+[ABSTRACT] Basic economic relations such as substitutability and complementarity between products are crucial for recommendation tasks, since the utility of one product may depend on whether or not other products are purchased. For example, the utility of a camera lens could be high if the user possesses the right camera (complementarity), while the utility of another camera could be low because the user has already purchased one (substitutability). We propose multi-product utility maximization (MPUM) as a general approach to recommendation driven by economic principles.
+[Categories and Subject Descriptors] M.5.4 [Applied Computing]: Law, Social and Behavioral Sciences- Economics; H.3.3 [Information Search and Retrieval]: Information Filtering
+[General Terms] N/A
+[Keywords] Recommender Systems; Utility Maximization; Collaborative Filtering; Computational Economics
+[INTRODUCTION AND MOTIVATION] In this paper, we propose just such a measure, called Multi-Product Utility Maximization (MPUM). Beginning with the crucial economic idea of Marginal Rate of Substitution (MRS)[39], we show how to construct pairwise utility functions that generalize well beyond standard CobbDouglas utility function [9].
+[RELATED WORK] Collaborative Filtering (CF)
+[DataSet] Amazon Baby Registry Transactions / Shop.com Transactions
+[Measurement] Precision / Recall / F-measure
+
 (84)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Neural Survival Recommender
 *(85)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Not Enough Data - Joint Inferring Multiple Diffusion Networks via Network Generation Priors
 *(86)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Recurrent Recommender Networks
