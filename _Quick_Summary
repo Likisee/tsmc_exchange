@@ -385,7 +385,7 @@ There are also some work on implicit feedback data sets[19,3].
 
 (81)	WSDM2017 - SESSION Paper Session 1 Social and Information Networks - Evolution of Ego-networks in Social Media with Link Recommendations
 (82)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Directed Edge Recommender System
-*(83)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Multi-Product Utility Maximization for Economic Recommendation
+**(83)	WSDM2017 - SESSION Paper Session 5 Networks and Recommendation - Multi-Product Utility Maximization for Economic Recommendation
 [ABSTRACT] Basic economic relations such as substitutability and complementarity between products are crucial for recommendation tasks, since the utility of one product may depend on whether or not other products are purchased. For example, the utility of a camera lens could be high if the user possesses the right camera (complementarity), while the utility of another camera could be low because the user has already purchased one (substitutability). We propose multi-product utility maximization (MPUM) as a general approach to recommendation driven by economic principles.
 [Categories and Subject Descriptors] M.5.4 [Applied Computing]: Law, Social and Behavioral Sciences- Economics; H.3.3 [Information Search and Retrieval]: Information Filtering
 [General Terms] N/A
